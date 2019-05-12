@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Itemtodo from './Itemtodo';
 import Finished from './Finished';
+var capitalize = require('capitalize');
 var mang=[];
 var  mangedit=[]
 var manghoanthanh=[];
@@ -12,15 +13,30 @@ class Form extends Component {
             finished:[],
             itemadd: "",
             isEdit: "Add",
-            itemedit: ""
+            itemedit: "",
+            message:""
         }
     }
     isChange=(event)=>{
        this.setState({
-           itemadd: event.target.value,
-           itemedit: event.target.value
+           itemadd: capitalize( event.target.value),
+           itemedit: capitalize(event.target.value)
        })
 
+    }
+    showmessage=()=>{
+        if(this.state.message==="rong"){
+            return(
+                <div class="alert alert-danger ">
+                <strong>Bạn chưa nhập</strong> Kiểm tra lại đi!!
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+            )
+        }
+        else    
+        return null
     }
     add=(event)=>{
 
@@ -28,13 +44,16 @@ class Form extends Component {
 
             if(this.state.itemadd === "")
         {
-            alert("Nhập")
+           this.setState({
+               message: "rong"
+           })
         }
         else{
             mang.push(this.state.itemadd)
             this.setState({
             list: mang,
-            itemadd: ""
+            itemadd: "",
+            message:""
              })
         }
         }
@@ -99,6 +118,7 @@ class Form extends Component {
                 <div>
             <div className="form-group">
                 <h1> To Do <small>List</small></h1>
+                    {this.showmessage()}
                 <form >
                 <input value={this.state.itemedit} required onChange={(event)=>this.isChange(event)} type="text" className="form-control" placeholder="Your Task" name="task" />
                 <button  type="reset"  onClick={(event)=>this.add(event)}className="btn btn btn-primary  btn-block">{this.state.isEdit}</button>
