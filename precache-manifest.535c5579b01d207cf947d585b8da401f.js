@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ae591a0555fa847ef5db1acec86d25ab",
+    "revision": "ee87c6311df58852aee1df43a59aede1",
     "url": "/demotodolist/index.html"
   },
   {
-    "revision": "ad25544b7ee50c31274f",
+    "revision": "a45937d45c1f9f8496ce",
     "url": "/demotodolist/static/css/main.5b6dc050.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/demotodolist/static/js/2.ee6bd4ab.chunk.js"
   },
   {
-    "revision": "ad25544b7ee50c31274f",
-    "url": "/demotodolist/static/js/main.648b7632.chunk.js"
+    "revision": "a45937d45c1f9f8496ce",
+    "url": "/demotodolist/static/js/main.0992b682.chunk.js"
   },
   {
     "revision": "ed49ef76239e2b681409",

@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/demotodolist/static/css/main.5b6dc050.chunk.css",
-    "main.js": "/demotodolist/static/js/main.648b7632.chunk.js",
-    "main.js.map": "/demotodolist/static/js/main.648b7632.chunk.js.map",
+    "main.js": "/demotodolist/static/js/main.0992b682.chunk.js",
+    "main.js.map": "/demotodolist/static/js/main.0992b682.chunk.js.map",
     "runtime~main.js": "/demotodolist/static/js/runtime~main.c0beb533.js",
     "runtime~main.js.map": "/demotodolist/static/js/runtime~main.c0beb533.js.map",
     "static/js/2.ee6bd4ab.chunk.js": "/demotodolist/static/js/2.ee6bd4ab.chunk.js",
     "static/js/2.ee6bd4ab.chunk.js.map": "/demotodolist/static/js/2.ee6bd4ab.chunk.js.map",
     "index.html": "/demotodolist/index.html",
-    "precache-manifest.5be082f9caae779a513e9c5c10ff1028.js": "/demotodolist/precache-manifest.5be082f9caae779a513e9c5c10ff1028.js",
+    "precache-manifest.535c5579b01d207cf947d585b8da401f.js": "/demotodolist/precache-manifest.535c5579b01d207cf947d585b8da401f.js",
     "service-worker.js": "/demotodolist/service-worker.js",
     "static/css/main.5b6dc050.chunk.css.map": "/demotodolist/static/css/main.5b6dc050.chunk.css.map"
   }
